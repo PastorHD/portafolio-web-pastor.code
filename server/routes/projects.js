@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const connection = require('../index')
+const connection = require('../db') // Importamos el archivo aparte de la BD
 
 // Obtener todos los proyectos
 router.get('/projects', (req, res) => {
